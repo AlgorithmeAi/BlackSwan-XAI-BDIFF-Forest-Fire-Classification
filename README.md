@@ -55,7 +55,7 @@ We enhanced interpretability using a **RAG (Retrieval-Augmented Generation)** sy
 from BDIFF import make_population, my_graphic_function, datapoint_to_csv
 
 # Load your test dataset (e.g., unseen wildfire incidents)
-population = make_population("path/to/backtest.csv")
+population = make_population("data/backtest.csv")
 
 # Analyze a specific incident
 item = population[0]
