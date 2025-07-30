@@ -7,7 +7,7 @@ This project leverages the public French dataset **BDIFF** (`Base de Données de
 ```
 BDIFF/
 ├── algorithmeai/
-│   ├── BDIFF.py                # Main script for classification
+│   ├── BDIFF.py                # Python Library for classification / XAI purposes
 │   ├── automl.py               # AutoML comparisons
 │   ├── plot_model.py           # Model plotting and evaluation
 │   └── prep-maker.py           # Data preprocessing pipeline
