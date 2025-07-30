@@ -49,12 +49,47 @@ We enhanced interpretability using a **RAG (Retrieval-Augmented Generation)** sy
 - scikit-learn
 - matplotlib
 
-### Run the main classifier
+### 🚀 Quickstart
 
-```bash
-cd BDIFF/algorithmeai
-python BDIFF.py
+```python
+from BDIFF import make_population, my_graphic_function, datapoint_to_csv
+
+# Load your test dataset (e.g., unseen wildfire incidents)
+population = make_population("path/to/backtest.csv")
+
+# Analyze a specific incident
+item = population[0]
+result = my_graphic_function(item)
+print(result)
+
+# Export a custom CSV for training/debugging
+csv = datapoint_to_csv(item)
+print(csv)
 ```
+
+---
+
+### 🔍 Output Example
+
+```json
+{
+  "estimation": 0.34,
+  "features_audit": {
+    "Surface forêt (m2)": [34, 13.13],
+    "Type de peuplement": [31, 11.97],
+    ...
+  }
+}
+```
+
+---
+
+### 📊 Use Cases
+
+- Fire department auditors seeking suspicious patterns
+- Regional policy makers assessing structural risks
+- Analysts looking for explainable ML on small tabular data
+
 
 ## 📜 License
 
